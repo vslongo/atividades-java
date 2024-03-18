@@ -1,4 +1,4 @@
-// Definição da interface Coletável
+
 interface Coletável {
   void usar();
   void descartar();
@@ -43,7 +43,7 @@ class Herói extends Personagem {
 
   @Override
   void defender(int dano) {
-      int danoReal = dano / 2; // Heróis recebem metade do dano
+      int danoReal = dano / 2; 
       receberDano(danoReal);
   }
 
