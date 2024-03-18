@@ -4,7 +4,6 @@ interface Coletável {
   void descartar();
 }
 
-// Definição da classe abstrata Personagem
 abstract class Personagem {
   String nome;
   int vida;
@@ -52,9 +51,8 @@ class Herói extends Personagem {
       if (mana >= 10) {
           mana -= 10;
           System.out.println(nome + " usou habilidade especial!");
-          // Implementação da habilidade especial
           System.out.println("Habilidade especial ativada: Regeneração de Vida");
-          vida += 30; // A habilidade especial regenera 30 pontos de vida
+          vida += 30;
           System.out.println("Vida de " + nome + " aumentada para " + vida);
       } else {
           System.out.println("Mana insuficiente para usar habilidade especial.");
@@ -83,7 +81,6 @@ class Monstro extends Personagem {
   }
 
   int calcularDano() {
-      // Cálculo de dano do monstro, que pode incluir sua força e ataque
       return forca + ataque;
   }
 }
@@ -144,15 +141,15 @@ class Poção implements Coletável {
 // Classe de teste
 public class JogoHeroi {
   public static void main(String[] args) {
-      // Criando personagens
+      
       Herói herói = new Herói("Herói", 100, 20, 50);
       Monstro monstro = new Monstro("Monstro", 80, 15, 10);
 
-      // Criando itens
+      
       Arma espada = new Arma("Espada", 30);
       Poção poçãoCura = new Poção("Poção de Cura", 20);
 
-      // Interagindo no jogo
+     
       herói.atacar(monstro);
       monstro.atacar(herói);
 
