@@ -1,0 +1,10 @@
+<itens>
+    <item>
+        <nome>Item 1</nome>
+        <preco>10.50</preco>
+    </item>
+    <item>
+        <nome>Item 2</nome>
+        <preco>20.00</preco>
+    </item>
+</itens>
