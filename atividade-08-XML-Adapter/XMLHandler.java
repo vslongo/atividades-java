@@ -18,7 +18,6 @@ public class XMLHandler {
                 Element item = (Element) nodeList.item(i);
                 String nome = item.getElementsByTagName("nome").item(0).getTextContent();
                 double preco = Double.parseDouble(item.getElementsByTagName("preco").item(0).getTextContent());
-                // Chama o método insertData da classe DatabaseSimulator para simular a inserção no banco de dados
                 DatabaseSimulator.insertData(nome, preco);
             }
             System.out.println("Dados da nota fiscal processados com sucesso.");
