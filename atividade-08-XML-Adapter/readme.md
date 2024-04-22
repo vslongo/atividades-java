@@ -11,7 +11,7 @@ Para executar este projeto, você precisará ter o Java Development Kit (JDK) in
 1. **Clone o Repositório**: Clone este repositório em sua máquina local usando o seguinte comando:
 
     ```bash
-    git clone https://github.com/seu-usuario/processamento-xml.git
+    git clone https://github.com/vslongo/atividades-java/edit/main/atividade-08-XML-Adapter.git
     ```
 
 2. **Adicione o Arquivo XML de Entrada**: Coloque o arquivo XML contendo os dados da nota fiscal na raiz do projeto e nomeie-o como `input.xml`.
